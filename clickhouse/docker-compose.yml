@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  click_server:
+    image: yandex/clickhouse-server
+    ports:
+      - "8123:8123"
+    volumes:
+      - ./restore:/restore
+    environment:
+      # Default user and database will be created using `init-defaults.sh` script
+      CLICKHOUSE_DB: simulator
+      CLICKHOUSE_USER: victor
+      CLICKHOUSE_PASSWORD: 22749863
+  click_client:
+    image: yandex/clickhouse-client
+    entrypoint:
+      - /bin/sleep
+    command:
+      - infinity

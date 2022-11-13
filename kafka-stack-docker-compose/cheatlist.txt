@@ -1,0 +1,33 @@
+1. Запускаем все контейнеры $ docker-compose up -d
+2. Запускаем ksqldb server $ docker exec -it ksqldb-cli ksql http://ksqldb-server:8088
+3. В терминале появится приветственное окно и командная строка будет начинаться с ksql>
+4. Создаем там стрим и топик CREATE STREAM ORDERS (order_id VARCHAR, product_name VARCHAR, cnt INT, price DOUBLE) \
+WITH (kafka_topic='ORDERS', value_format='json', partitions=1);
+5. Проверим что получилось командой SHOW STREAMS;
+6. Проверим топики SHOW TOPICS;
+7. Проверяем содержание таблицы потока SELECT * FROM ORDERS EMIT CHANGES;
+8. Открываеи второе окно терминала и повторно заходим на ksqldb-server $ docker exec -it ksqldb-cli ksql http://ksqldb-server:8088
+9. Вручную добавляем строки в таблицу 
+INSERT INTO ORDERS (order_id, product_name, cnt, price) VALUES ('1', 'book', 7, 90.8);
+INSERT INTO ORDERS (order_id, product_name, cnt, price) VALUES ('2', 'dildo', 3, 290.0);
+INSERT INTO ORDERS (order_id, product_name, cnt, price) VALUES ('3', 'mask', 2, 8.8);
+INSERT INTO ORDERS (order_id, product_name, cnt, price) VALUES ('4', 'macbook', 12, 1990.0);
+в предыдущем окне в таблице будут появляться эти строки
+10. Открываем еще одно окно в терминале и переходим в контейнер с брокером $ docker exec -it broker bash
+11. Там набираем команду для просмотра топика $ kafka-console-consumer --topic ORDERS --bootstrap-server broker:9092 --from-beginning
+в результате будут json-ы сообщений
+12. Во втором окне еще раз делаем какой-ньть INSERT. В первом и третьем окнах добавятся сообщения
+13. Создаем группирующую таблицу в ksqldb во втором окне
+CREATE TABLE product_total_price AS SELECT product_name, SUM(price) FROM ORDERS GROUP BY product_name;
+14. Хотя консоль выводит сообщение что таблица создана проверим командой SHOW TABLES;
+15. В выводе вместе с именем таблицы видим такое же имя топика, посмотрим на топик
+16. Открываем 4 окно терминала и переходим в контейнер с брокером $ docker exec -it broker bash
+17. Там подключаемся к топику 
+kafka-console-consumer \
+--topic PRODUCT_TOTAL_PRICE \
+--bootstrap-server broker:9092 \
+--from-beginning \
+--property print.key=true \
+--property key.separator="-"
+в результате нихуя
+18. Во втором окне набросаем инсертов. В 1,3,4 окнах добавались данные. Особенно в 4 окне в нужном формате
