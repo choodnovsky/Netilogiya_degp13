@@ -23,7 +23,7 @@ df = spark.read\
 # создаем объект окна
 windowSpec = Window()
 
-# df.printSchema()
+df.printSchema()
 '''
 Задание 1
 Выберите 15 стран с наибольшим процентом переболевших на 31 марта
