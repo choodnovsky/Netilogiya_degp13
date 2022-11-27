@@ -96,7 +96,7 @@
 [24]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/reducer.py
 [25]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/mapreduce_1.sh
 [26]:https://raw.githubusercontent.com/choodnovsky/Netilogiya_degp13/master/result.log
-[27]:https://raw.githubusercontent.com/choodnovsky/Netilogiya_degp13/master/dz_5.01.txt
+[27]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_5.01.ipynb
 [28]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_5.02.ipynb
 [29]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_5.02.py
 [30]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.01.ipynb
