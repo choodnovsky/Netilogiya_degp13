@@ -52,16 +52,23 @@
 | Spark SQL                          | [dz_5.02.ipynb][28]<br>[dz_5.02.py][29] |
 
 
+### Потоковые данные
+
+| ***Наименование исследования***    | ***notebook*** |
+|:-----------------------------------|:--------------:|
+| Домашнее задание по Spark Streaming | [dz_6.03][30]  |
+
+
 ### ML
 
 | ***Наименование исследования***                     |                                ***notebook***                                 |
 |:----------------------------------------------------|:-----------------------------------------------------------------------------:|
-| Классификация: Логистическая регрессия и SVM        |                                 [dz_8.02][31]                                 |
-| Функции потерь и оптимизация                        | [dz_8.03.ipynb][34]<br>[dz_8.03_full.ipynb][32]<br>[dz_8.03_matrix.ipynb][33] |
-| Оценка точности модели, переобучение, регуляризация |                              [dz_8.04.ipnb][35]                               |
-| Проблема качества данных                            |                              [dz_8.05.ipynb][36]                              |
-| Работа с пропусками                                 |                              [dz_8.06.ipynb][37]                              |
-| Работа над собой                                    |                              [dz_8.06.ipynb][37]                              |
+| Классификация: Логистическая регрессия и SVM        |                                 [dz_8.02][32]                                 |
+| Функции потерь и оптимизация                        | [dz_8.03.ipynb][35]<br>[dz_8.03_full.ipynb][33]<br>[dz_8.03_matrix.ipynb][34] |
+| Оценка точности модели, переобучение, регуляризация |                              [dz_8.04.ipnb][36]                               |
+| Проблема качества данных                            |                              [dz_8.05.ipynb][37]                              |
+| Работа с пропусками                                 |                              [dz_8.06.ipynb][38]                              |
+| Работа над собой                                    |                              [dz_8.06.ipynb][39]                              |
 
 
 
@@ -99,12 +106,13 @@
 [27]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_5.01.ipynb
 [28]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_5.02.ipynb
 [29]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_5.02.py
-[30]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.01.ipynb
-[31]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.02.ipynb
-[32]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.03-full.ipynb
-[33]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.03-matrix.ipynb
-[34]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.03.ipynb
-[35]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.04.ipynb
-[36]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.05.ipynb
-[37]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.06.ipynb
-[38]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.07.ipynb
+[30]:https://github.com/choodnovsky/Netilogiya_degp13/tree/master/spark_streaming_hw
+[31]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.01.ipynb
+[32]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.02.ipynb
+[33]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.03-full.ipynb
+[34]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.03-matrix.ipynb
+[35]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.03.ipynb
+[36]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.04.ipynb
+[37]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.05.ipynb
+[38]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.06.ipynb
+[39]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.07.ipynb
