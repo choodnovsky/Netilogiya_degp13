@@ -11,3 +11,4 @@ prophet.ipynb
 /dz_05.02/res_*/*.crc
 /kafka-streams-practice
 /clickhouse/.idea/
+/mlruns
