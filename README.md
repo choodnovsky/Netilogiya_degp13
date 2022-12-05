@@ -71,6 +71,7 @@
 | Проблема качества данных                            |                              [dz_8.05.ipynb][39]                              |
 | Работа с пропусками                                 |                              [dz_8.06.ipynb][40]                              |
 | Работа переменными                                  |                              [dz_8.07.ipynb][41]                              |
+| Дерево решений                                |                              [dz_8.08.ipynb][42]                              |
 
 
 
@@ -122,3 +123,4 @@
 [39]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.05.ipynb
 [40]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.06.ipynb
 [41]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.07.ipynb
+[42]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.08.ipynb
