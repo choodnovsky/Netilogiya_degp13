@@ -73,6 +73,9 @@
 | Работа переменными                                  |                              [dz_8.07.ipynb][41]                              |
 | Дерево решений                                      |                              [dz_8.08.ipynb][42]                              |
 | Ансамбли                                            |                              [dz_8.09.ipynb][43]                              |
+| Поиск выбросов и генерация новых признаков          |                              [dz_8.10.ipynb][44]                              |
+| Feature Selection                                   |                              [dz_8.11.ipynb][45]                              |
+| Кластеризация                                       |                              [dz_8.12.ipynb][46]                              |
 
 
 
@@ -126,3 +129,6 @@
 [41]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.07.ipynb
 [42]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.08.ipynb
 [43]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.09.ipynb
+[44]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.10.ipynb
+[45]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.11.ipynb
+[46]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.12.ipynb
