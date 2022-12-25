@@ -76,7 +76,7 @@
 | Поиск выбросов и генерация новых признаков          |                              [dz_8.10.ipynb][44]                              |
 | Feature Selection                                   |                              [dz_8.11.ipynb][45]                              |
 | Кластеризация                                       |                              [dz_8.12.ipynb][46]                              |
-
+| Улучшение качества модели                           |                              [dz_8.13.ipynb][47]                              |
 
 
 
@@ -132,3 +132,4 @@
 [44]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.10.ipynb
 [45]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.11.ipynb
 [46]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.12.ipynb
+[47]:https://github.com/choodnovsky/Netilogiya_degp13/blob/master/dz_8.13.ipynb
