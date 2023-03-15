@@ -24,7 +24,7 @@
     - Кластер всегда состоит хотя бы из одной мастер ноды
 
 ### Пошаговое исполнение:  
-1. Устанавливаем minikube - клостер из 1 ноды и оболочку kubectl. `brew install minikube`, `brew install kubectl`. В качестве драйвера будем использовать docker
+1. Устанавливаем minikube - кластер из 1 ноды и оболочку kubectl. `brew install minikube`, `brew install kubectl`. В качестве драйвера будем использовать docker
 2. Запускаем кластер `minikube start` ![minikube start.png](minikube start.png)
 3. Можем даже зайти на кластер `minikube ssh` и поделать какие-нибудь команды, чтобы убедиться что все работает ![minikube ssh.png](minikube ssh.png)
 4. Собираем манифест файл [manifest.yaml](./manifest.yaml)
