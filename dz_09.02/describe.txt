@@ -1,0 +1,108 @@
+Name:             tomcat-service-6db794b99-jwmnj
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Wed, 15 Mar 2023 08:51:27 +0300
+Labels:           api=tomcat-service
+                  pod-template-hash=6db794b99
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.4
+IPs:
+  IP:           10.244.0.4
+Controlled By:  ReplicaSet/tomcat-service-6db794b99
+Containers:
+  tomcat-service:
+    Container ID:   docker://610e0be21d4f7b3b30efc89dc2922d98ed886e63ad70c3bfb926880166e73e2d
+    Image:          tomcat:8.5.69
+    Image ID:       docker-pullable://tomcat@sha256:fb2af6954cb35ad01e633a30b58cc6fbd8179ca9d1255cdea34e77668eef6cf7
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 15 Mar 2023 08:52:23 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-c2hn9 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-c2hn9:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  80s   default-scheduler  Successfully assigned default/tomcat-service-6db794b99-jwmnj to minikube
+  Normal  Pulling    80s   kubelet            Pulling image "tomcat:8.5.69"
+  Normal  Pulled     24s   kubelet            Successfully pulled image "tomcat:8.5.69" in 1.347842834s (56.140797609s including waiting)
+  Normal  Created    24s   kubelet            Created container tomcat-service
+  Normal  Started    24s   kubelet            Started container tomcat-service
+
+
+Name:             tomcat-service-6db794b99-q4xhd
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Wed, 15 Mar 2023 08:51:27 +0300
+Labels:           api=tomcat-service
+                  pod-template-hash=6db794b99
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.3
+IPs:
+  IP:           10.244.0.3
+Controlled By:  ReplicaSet/tomcat-service-6db794b99
+Containers:
+  tomcat-service:
+    Container ID:   docker://9f3e2f66e041e71c3fa09fe18e321f5b001bc84368c5c236bd999ce0f004309a
+    Image:          tomcat:8.5.69
+    Image ID:       docker-pullable://tomcat@sha256:fb2af6954cb35ad01e633a30b58cc6fbd8179ca9d1255cdea34e77668eef6cf7
+    Port:           8080/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 15 Mar 2023 08:52:22 +0300
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7bz5x (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-7bz5x:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  80s   default-scheduler  Successfully assigned default/tomcat-service-6db794b99-q4xhd to minikube
+  Normal  Pulling    80s   kubelet            Pulling image "tomcat:8.5.69"
+  Normal  Pulled     25s   kubelet            Successfully pulled image "tomcat:8.5.69" in 54.812281483s (54.812349233s including waiting)
+  Normal  Created    25s   kubelet            Created container tomcat-service
+  Normal  Started    25s   kubelet            Started container tomcat-service
