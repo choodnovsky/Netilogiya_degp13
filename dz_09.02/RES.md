@@ -25,11 +25,11 @@
 
 ### Пошаговое исполнение:  
 1. Устанавливаем minikube - кластер из 1 ноды и оболочку kubectl. `brew install minikube`, `brew install kubectl`. В качестве драйвера будем использовать docker
-2. Запускаем кластер `minikube start` ![minikube start.png](minikube start.png)
-3. Можем даже зайти на кластер `minikube ssh` и поделать какие-нибудь команды, чтобы убедиться что все работает ![minikube ssh.png](minikube ssh.png)
+2. Запускаем кластер `minikube start` ![minikube_start.png](minikube_start.png)
+3. Можем даже зайти на кластер `minikube ssh` и поделать какие-нибудь команды, чтобы убедиться что все работает ![minikube_ssh.png](minikube_ssh.png)
 4. Собираем манифест файл [manifest.yaml](./manifest.yaml)
-5. Запускаем deployment `kubectl apply -f manifest.yaml` и проверяем что поды созданы `kubectl get pods` ![kubectl apply.png](kubectl apply.png)
+5. Запускаем deployment `kubectl apply -f manifest.yaml` и проверяем что поды созданы `kubectl get pods` ![kubectl_apply.png](kubectl_apply.png)
 6. Просмотрим полную информацию о подах `kubectl describe pods`. Для наглядности сохраним вывод в файл [describe.txt](./describe.txt)
-7. Ради эксперимента перейдем внутрь пода и выполним там какую-нибудь команду, вывод даты например `kubectl exec tomcat-service-6db794b99-q4xhd -- date`. Все работает ![kubectl describe.png](kubectl describe.png)
-8. Для завершения эксперимента перенаправим порт контейнера 8080 на порт хоста 8888 `kubectl port-forward tomcat-service-6db794b99-jwmnj 8888:8080`. ![kubectl port-forward.png](kubectl port-forward.png)
+7. Ради эксперимента перейдем внутрь пода и выполним там какую-нибудь команду, вывод даты например `kubectl exec tomcat-service-6db794b99-q4xhd -- date`. Все работает ![kubectl_describe.png](kubectl_describe.png)
+8. Для завершения эксперимента перенаправим порт контейнера 8080 на порт хоста 8888 `kubectl port-forward tomcat-service-6db794b99-jwmnj 8888:8080`. ![kubectl_port-forward.png](kubectl_port-forward.png)
 9. Посмотрим что будет по адресу __localhost:8888__ ![screen.png](screen.png)
