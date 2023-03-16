@@ -7,7 +7,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-#      - uses: actions/checkout@v3
       - name: build
         run: |
           echo "Building"
@@ -17,4 +16,4 @@ jobs:
       - name: test
         run: |
           echo "Testing"
-          if [ -f info.txt ]; then echo "File info.txt exists"; else echo "File info.txt doesn't exits"; fi
+          if [ -f ./build/info.txt ]; then echo "File info.txt exists"; else echo "File info.txt doesn't exits"; fi
