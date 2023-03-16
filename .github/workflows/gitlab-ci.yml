@@ -13,6 +13,10 @@ jobs:
           mkdir build
           cd build
           touch info.txt
+  tests:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
       - name: test
         run: |
           echo "Testing"
