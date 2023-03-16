@@ -4,8 +4,8 @@ on:
   workflow_dispatch
   
 jobs:
-  runs-on: ubuntu-latest
   build:
+    runs-on: ubuntu-latest
     steps:
       - name: build
         run: |
@@ -13,8 +13,6 @@ jobs:
           mkdir build
           cd build
           touch info.txt
-  tests:
-    steps:
       - name: test
         run: |
           echo "Testing"
