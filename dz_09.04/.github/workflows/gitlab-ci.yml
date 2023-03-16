@@ -1,4 +1,4 @@
-name: netologiya dz 09.04 ci/cd
+name: netologiya 09.04 cicd
 
 on:
   workflow_dispatch
