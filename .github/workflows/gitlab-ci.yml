@@ -11,11 +11,11 @@ jobs:
       - name: build
         run: |
           echo "Building"
-          mkdir build
-          touch info.txt
+          mkdir .github/workflows/build
+          touch .github/workflows/build/info.txt
       - name: test
         run: |
           echo "Testing"
-          if [ -f info.txt ]; then echo "File info.txt exists"; else echo "File info.txt doesn't exits"; fi
+          if [ -f .github/workflows/build/info.txt ]; then echo "File info.txt exists"; else echo "File info.txt doesn't exits"; fi
     
   
