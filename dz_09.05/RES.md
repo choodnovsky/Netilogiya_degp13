@@ -1,7 +1,7 @@
 ## **Выполнение задания**:
 
 1. Колнируем репозиторий Штефана Продана- https://github.com/stefanprodan/dockprom
-2. Собираем 
+2. Собираем (там и без того все уже собрано)
 3. Поднимаем `docker-compose up -d`
 4. Проверяем, что всё работает через `docker ps` ![docker_ps.png](docker_ps.png)
 так же все работает в дашборде docker desktop ![docker_dt.png](docker_dt.png) и в pycharm ![docker_pc.png](docker_pc.png)
