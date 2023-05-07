@@ -21,4 +21,4 @@
 
 MULTILINE-COMMENT
 
-cat Downloads/keywords.csv | python mapper.py | sort | python reducer.py > result.log
+cat Downloads/keywords.csv | python3.10 mapper.py | sort | python3.10 reducer.py > result.log
